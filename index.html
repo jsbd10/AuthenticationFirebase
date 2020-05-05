@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d911bf9c08.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="botones">
+      <!-- Google -->
+      <h1>Iniciar Sesion</h1>
+      <button id="login">
+        <i id="icon" class="fab fa-google"></i>
+        Iniciar con google
+      </button>
+
+      <!-- Facebook -->
+      <button id="facebook">
+        <i class="fab fa-facebook-f"></i> Iniciar con facebook
+      </button>
+
+      <!-- Twitter -->
+      <button id="github">
+        <i class="fab fa-github"></i> Iniciar con GitHub
+      </button>
+    </div>
+
+    <div id="root"></div>
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script firebase -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDzbUdglfkkJhzxfCeEttZEHvR-37ZboZ8",
+        authDomain: "taller-d1433.firebaseapp.com",
+        databaseURL: "https://taller-d1433.firebaseio.com",
+        projectId: "taller-d1433",
+        storageBucket: "taller-d1433.appspot.com",
+        messagingSenderId: "490289017076",
+        appId: "1:490289017076:web:0ad0c6de883c3720d52ea1",
+        measurementId: "G-BGTJBM1NKG",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
